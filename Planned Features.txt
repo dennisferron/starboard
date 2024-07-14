@@ -1,0 +1,23 @@
+Planned features:
+
+Display the various vcpkg error logs (both in C:\source\vcpkg\buildtrees and cmake-build-debug)
+(Easier from an application; how would you do this from a Bash script?)
+
+Update the git tag in the .cmake file in the port
+
+Calculate the SHA512 of the github download
+(Easier from Bash - run vcpkg hash.)
+
+Calculate the port's git rev-parse tree value
+Check if the tree value is still up to date
+
+Report if the versions of everything matches
+
+It could be a command with subcommands like git or vcpkg does
+
+
+Design/Development:
+
+An organizing principle for the algorithm, if not even also the user interface, could be to make it teleological (i.e. backward chaining). Start with the end-end user's goal, "I want my project that uses port 'foo' to be using the latest version of it." That necessitates checking if the vcpkg-config.json references a hash of the custom registry which contains the latest version, which necessitates checking if the version of the port actually is the latest upstream, etc.
+
+The starboard tool should do a dry-run before actually committing changes. I could focus on getting this "linter" functionality working first before tackling making it capable of performing the changes. This strategy has the benefit of I could quash a lot of bugs and build out a lot of the UI while the program is only doing read-only operations. I hesitate to call this solving the "simpler" problem first, because I expect parsing and determining what actions to take is actually the hard part.

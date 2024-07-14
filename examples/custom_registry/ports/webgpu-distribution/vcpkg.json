@@ -1,0 +1,9 @@
+{
+  "name": "webgpu-distribution",
+  "version": "1.0.0",
+  "description": "Loads an appropriate WebGPU library depending on compilation target",
+  "homepage": "https://github.com/dennisferron/WebGPU-distribution",
+  "dependencies": [
+  ]
+}
+ 

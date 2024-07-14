@@ -1,0 +1,17 @@
+{
+	"versions": [
+		{
+			"version": "1.0.2",
+			"$comment": "THIS is the rev-parse of the folder of the port.",
+			"git-tree": "2ca44d62e64099b0edd7f651a24af9ed8663c24e"
+		},
+		{
+			"version": "1.0.1",
+			"git-tree": "bdccb2a9665b532ed04f3002971ec53d2a6d9a3f"
+		},
+		{
+			"version": "1.0.0",
+			"git-tree": "659ad19def2a847cad3ca9ce4a6f43bdef9463ab"
+		}
+	]
+}

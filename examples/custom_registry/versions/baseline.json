@@ -1,0 +1,20 @@
+{
+  "default": {
+    "antlr4-testrig-runner": {
+      "baseline": "1.0.4",
+      "port-version": 2
+    },
+    "beicode": {
+      "baseline": "1.0.0",
+      "port-version": 0
+    },
+    "beison": {
+      "baseline": "1.0.2",
+      "port-version": 0
+    },
+    "webgpu-distribution": {
+      "baseline": "1.0.0",
+      "port-version": 0
+    }
+  }
+}
